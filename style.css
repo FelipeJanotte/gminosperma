@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     display: flex;
-    background: lightcoral;
+    background: #101825;
 }
 
 .memory-game{
@@ -16,6 +16,7 @@ body{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .card {
@@ -27,27 +28,45 @@ body{
     position: relative;
     transform: scale(1);
 
-    box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
     cursor: pointer;
+    transform-style: preserve-3d; /* Não deixa o elemento achatado no plano */
+    transition: transform .9s;
 
 }
 
-.card-back{
-    width: 250px;
-    height: 150px;
+.card:active{
+    transform: scale(0.97);
+    transition: transform .3s;
 }
 
-.card-front{
-    width: 250px;
-    height: 150px;
-}
+
 
 .card-front,
 .card-back {
+    width: 250px;
+    height: 150px;
 
-    padding: 20px;
+    padding: 15px;
     position: absolute;
 
     border-radius: 5px;
-    background: coral;
+    background: #101825;
+    border: solid 1px #FF4654;
+
+
+    backface-visibility: hidden;
+}
+
+.card-front{
+    transform: rotateY(180deg);
+}
+
+.card-back img{
+    border-radius: 5px;
+}
+
+/* Animação */
+
+.card.flip{
+    transform: rotateY(180deg);
 }
