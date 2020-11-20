@@ -1,0 +1,10 @@
+Trabalho Biologia - Jogo da Memória - Gminosperma
+
+* Faça o download de tudo e extraia o arquivo .zip
+* Abra o arquivo: "jogo-da-memoria.html"
+
+Não recomendamos:
+	Abrir diretamente pelo drive(pode causar conflito);
+	Fazer alguma alteração na pasta "arquivos";
+
+Atenciosamente, Felipe Janotte e Julia Bauer, 202.

@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: url(./imgs/bg.jpg) no-repeat #f1f1f1 bottom right;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+p{
+    text-align: justify;
+}
+
+.header{
+    margin: 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #63ba30;
+}
+.header h1{
+    font-size: 25px;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+h3{
+    font-weight: 300;
+}
+.header h1 h2 h3{
+    margin-bottom: 3px;
+}
+
+.regras{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+.regras p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.memory-game{
+    height: 95%;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.card {
+    height: calc(3.333% - 10px);
+    width: calc(25% - 10px);
+
+    margin: 5px;
+
+    position: relative;
+    transform: scale(1);
+
+    cursor: pointer;
+    transform-style: preserve-3d; /* Não deixa o elemento achatado no plano */
+    transition: transform .9s;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card:active{
+    transform: scale(0.97);
+    transition: transform .3s;
+}
+
+.card-front,
+.card-back {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+    padding: 15px;
+    position: absolute;
+
+    border-radius: 5px;
+    border: solid 1px #63ba30;
+    background-color: #f1f1f1;
+
+
+    backface-visibility: hidden;
+}
+
+.card-front{
+    transform: rotateY(180deg);
+}
+
+/* Animação */
+
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+/* Classificação */
+.classificacao{
+    color: seagreen;
+}
+.classificacao .card-front{
+    border: 1px solid seagreen;
+}
+
+/* Característica */
+
+.caracteristicas{
+    color: orange;
+}
+.caracteristicas .card-front{
+    border: 1px solid orange;
+}
+
+/* Reprodução */
+.reproducao{
+    color: #a1060e;
+}
+.reproducao .card-front{
+    border: 1px solid #a1060e;
+}
+
+/* Morfologia */
+.morf{
+    color: #64a5a5;
+}
+.morf .card-front{
+    border: 1px solid #64a5a5;
+}
+
+/* Coniferophyta */
+
+.coni{
+    color:lightcoral;
+}
+.coni .card-front{
+    border: 1px solid lightcoral;
+}
+
+/* Cycadophyta */
+.cyca{
+    color: #00518f;
+}
+.cyca .card-front{
+    border: 1px solid #00518f;
+}
+
+/* Gink */
+.gink{
+    color: #613c83;
+}
+.gink .card-front{
+    border: 1px solid #613c83;
+}
+
+/* Gneto */
+.gneto{
+    color: #ce4052;
+}
+.gneto .card-front{
+    border: 1px solid #ce4052;
+}

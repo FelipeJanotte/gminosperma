@@ -3,76 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory-Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Memória</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./arquivos/style.css">
+    <link rel="icon" type="image/png" href="./arquivos/imgs/favicon.png">
 </head>
 <body>
+    <header class="header">
+        <h1>Jogo da Memória - Gminospermas</h1>
+        <h2>Desenvolvido por Felipe Janotte e Julia Buer, 202</h2>
+        <div class="regras">
+            <h3>Como funciona</h3>
+            <p>É um jogo da memória, onde não consiste em acertar as cartas idênticas, mas sim de cartas que se complementam(texto se referindo á imagem ou texto e sua continuação). Colocamos cores diferentes nas cartas para melhor identificação.</p>
+        </div>
+    </header>
     <main class="memory-game">
-        <div class="card" data-card="breach">
-            <img src="./imgs/breach.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back" >
+        <div class="card morf" data-card="morfologia">
+            <p class="card-front">[...] ramos reprodutivos com folhas modificadas chamadas estróbilos. Nos pinheiros e nas sequoias, os estróbilos são bem desenvolvidos e conhecidos como cones.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="cypher">
-            <img src="./imgs/cypher.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back" >
+        <div class="card caracteristicas" data-card="caracteristicas">
+            <p class="card-front">Nas gimnospermas observa-se a ocorrência de sementes sem a presença de frutos envolvendo-as.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="reyna">
-            <img src="./imgs/reyna.JPG" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card coni" data-card="coniferophyta">
+            <p class="card-front">O maior grupo de gimnospermas. Como exemplo de conífera, temos os pinheiros e sequoias. Nesse filo, encontramos mais de 600 espécies distintas</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="sova">
-            <img src="./imgs/sova.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card cyca" data-card="cycadophyta">
+            <p class="card-front">Outra característica marcante é que nas cicadófitas temos plantas com folhas que lembram as palmeiras. Como exemplo de cicadófita, podemos citar as cicas.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="omen">
-            <img src="./imgs/omen.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card gink" data-card="ginkgophyta">
+            <p class="card-front">Grupo que possui apenas uma espécie vivente que é o Ginkgo biloba. As folhas dessa planta assemelham-se a um leque.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="breach">
-            <img src="./imgs/breach.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card morf" data-card="morfologia">
+            <p class="card-front">As gimnospermas possuem raízes, caule e folhas. Possuem também [...]</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="jett">
-            <img src="./imgs/jett.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card gneto" data-card="gnetophyta">
+            <p class="card-front">Grupo que possui três filos. Nesses três gêneros, encontramos características que os aproximam das angiospermas, como os cones, que são bastante similares às inflorescências.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="viper">
-            <img src="./imgs/viper.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card reproducao" data-card="reproducao">
+            <p class="card-front">[...] Nas gimnospermas, observa-se a presença de grãos de pólen, que são os responsáveis por garantir que os gametas masculinos cheguem até o gameta feminino.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="raze">
-            <img src="./imgs/raze.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card classificacao" data-card="classificacao">
+            <p class="card-front">As gimnospermas (do grego Gymnos: 'nu'; e sperma: 'semente') são plantas terrestres que vivem, [...]</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="cypher">
-            <img src="./imgs/cypher.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card caracteristicas" data-card="caracteristicas">
+            <p class="card-front">Principal característica ao reino Gminospermas</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="omen">
-            <img src="./imgs/omen.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card gink" data-card="ginkgophyta">
+            <img src="./arquivos/imgs/ginkgo-biloba.jpg" alt="Imagem de uma Ginkgo Biloba" class="card-front">
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="jett">
-            <img src="./imgs/jett.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card gneto" data-card="gnetophyta">
+            <img src="./arquivos/imgs/welwitschia.jpg" alt="Imagem de um Gnetophyta" class="card-front">
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="raze">
-            <img src="./imgs/raze.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card classificacao" data-card="classificacao">
+            <p class="card-front">[...] preferencialmente, em ambientes de clima frio ou temperado. Nesse grupo incluem-se plantas como pinheiros, as sequoias e os ciprestes.</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="reyna">
-            <img src="./imgs/reyna.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card coni" data-card="coniferophyta">
+            <img src="./arquivos/imgs/coni.jpg" alt="Imagem de uma Coniferophyta" class="card-front">
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="viper">
-            <img src="./imgs/viper.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card reproducao" data-card="reproducao">
+            <p class="card-front">Na maioria dos seus representantes, não há a presença de gametas masculinos flagelados, que necessitam de água para a reprodução, com exceção das cicadófitas e Ginkgo. [...]</p>
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
-        <div class="card" data-card="sova">
-            <img src="./imgs/sova.jpg" alt="front" class="card-front">
-            <img src="./imgs/valorant-logo.svg" alt="back" class="card-back">
+        <div class="card cyca" data-card="cycadophyta">
+            <img src='./arquivos/imgs/cica.jpg' class="card-front">
+            <img class="card-back" src="./arquivos/imgs/pine-cone.png" alt="Frente da carta">
         </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="./arquivos/script.js"></script>
 </body>
 </html>
