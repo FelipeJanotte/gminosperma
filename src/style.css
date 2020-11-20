@@ -24,6 +24,8 @@ p{
     align-items: center;
     color: #63ba30;
     border: 2px solid #63ba30;
+    border-radius: 8px;
+    padding: 50px;
 }
 .header h1{
     font-size: 25px;
@@ -55,6 +57,9 @@ h3{
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    
+    width: 95%;
+    height: 80%;
 }
 
 .card {
