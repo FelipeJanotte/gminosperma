@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 150vh;
     display: flex;
     background: url(./imgs/bg.jpg) no-repeat #f1f1f1 bottom right;
     font-family: 'Roboto', sans-serif;
@@ -23,6 +23,9 @@ p{
     flex-direction: column;
     align-items: center;
     color: #63ba30;
+    border: 2px solid #63ba30;
+    border-radius: 8px;
+    padding: 50px;
 }
 .header h1{
     font-size: 25px;
@@ -50,12 +53,13 @@ h3{
 }
 
 .memory-game{
-    height: 95%;
-    width: 75%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    
+    width: 95%;
+    height: 80%;
 }
 
 .card {
@@ -169,8 +173,8 @@ h3{
 
 /* Gneto */
 .gneto{
-    color: #ce4052;
+    color: #25570c;
 }
 .gneto .card-front{
-    border: 1px solid #ce4052;
+    border: 1px solid #25570c;
 }
